@@ -1,0 +1,108 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* Definir a largura padrão para os containers */
+.container {
+  width: 90vw;
+  margin: auto;
+}
+
+/* Configurações de fundo */
+.background {
+  background-image: url(../../../assets/background-blue.svg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* Estilo de navegação */
+.navigation-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+/* Estilos para os links da navegação */
+div.navigation-links {
+  display: flex;
+  gap: 35px;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+}
+
+div.navigation-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+div.navigation-links a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo do título */
+section h1 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  margin-top: 100px;
+}
+
+/* Estilo dos botões */
+.buttons {
+  margin-top: 50px; /* Ajuste o espaçamento para telas menores */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 botões por linha */
+  justify-items: center;
+  gap: 35px;
+}
+
+.buttons button {
+  width: 400px;
+  height: 70px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #001e54;
+  font-size: 18px; /* Ajuste o tamanho da fonte */
+  padding: 10px;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para dispositivos com largura de tela menor que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+  .container {
+    width: 95vw; /* Ajustar a largura do container */
+  }
+
+  section h1 {
+    font-size: 30px; /* Reduzir o tamanho do título */
+    margin-top: 50px; /* Ajuste a margem para o título */
+  }
+
+  .buttons {
+    grid-template-columns: 1fr; /* 1 botão por linha em dispositivos móveis */
+    gap: 20px;
+  }
+
+  .buttons button {
+    width: 90%; /* Fazer os botões ocuparem mais a largura da tela */
+    font-size: 16px; /* Ajustar o tamanho da fonte nos botões */
+    height: 60px; /* Ajustar a altura dos botões */
+  }
+}
+
+/* Para dispositivos com largura de tela menor que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  section h1 {
+    font-size: 24px; /* Diminuir ainda mais o tamanho do título */
+  }
+
+  .buttons button {
+    width: 90%;
+    font-size: 14px; /* Ajuste no tamanho da fonte para telas pequenas */
+    height: 50px; /* Ajuste na altura dos botões */
+  }
+}

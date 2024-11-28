@@ -1,0 +1,185 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Primeira seção */
+.container-1 {
+  background-image: url(../../../assets/background-blue.svg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.introduction {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.introduction h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.introduction p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  width: 100%;
+  max-width: 550px;
+  padding: 7px;
+}
+
+button {
+  width: 160px;
+  height: 68px;
+  border-radius: 35px;
+  background: #fff;
+  border: 1px solid #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button a {
+  color: #001e54;
+  font-weight: 600;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+/* Main section */
+.container {
+  width: 90vw;
+  margin: auto;
+}
+
+.about-us {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  padding: 50px 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about-content h2 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about-content p {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  padding: 7px;
+}
+
+.healthAgentsVector1 {
+  width: 100%;
+  max-height: 35rem;
+  object-fit: cover;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  /* Ajustando o título da introdução */
+  .introduction h1 {
+    font-size: 48px;
+  }
+
+  /* Ajustando o texto da introdução */
+  .introduction p {
+    font-size: 16px;
+  }
+
+  /* Ajustando os botões */
+  .introduction button {
+    width: 150px;
+    height: 60px;
+    font-size: 16px;
+  }
+
+  /* Ajustando o grid da seção "Sobre Nós" */
+  .about-us {
+    grid-template-columns: 1fr; /* Coloca os elementos em uma única coluna */
+    text-align: center;
+  }
+
+  .about-content {
+    margin: 20px;
+  }
+
+  /* Ajustando a imagem "Sobre Nós" */
+  .healthAgentsVector1 {
+    width: 80%; /* Aumenta o tamanho da imagem em dispositivos menores */
+    max-height: 20rem; /* Controla a altura da imagem */
+  }
+
+  /* Ajustando o título da seção "Sobre Nós" */
+  .about-content h2 {
+    font-size: 32px;
+  }
+
+  /* Ajustando o texto da seção "Sobre Nós" */
+  .about-content p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para telas muito pequenas (smartphones) */
+  .introduction h1 {
+    font-size: 36px;
+  }
+
+  .introduction p {
+    font-size: 14px;
+  }
+
+  .introduction button {
+    width: 120px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .about-content h2 {
+    font-size: 28px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+  }
+
+  .healthAgentsVector1 {
+    width: 100%; /* A imagem ocupa toda a largura */
+    max-height: 15rem; /* Ajusta a altura para telas pequenas */
+  }
+}

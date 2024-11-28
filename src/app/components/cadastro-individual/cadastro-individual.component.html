@@ -1,0 +1,84 @@
+<div id="webcrumbs">
+  <div class="form-container">
+
+
+    <h2 class="section-title">Dados Pessoais do Paciente</h2>
+    <div class="form-section">
+      <form class="form-grid">
+        <label class="form-field">
+          Nome Completo:
+          <input type="text" placeholder="Nome do paciente" />
+        </label>
+        <label class="form-field">
+          Data de Nascimento:
+          <input type="text" placeholder="00/00/0000" />
+        </label>
+        <label class="form-field">
+          Número do Cartão SUS:
+          <input type="text" placeholder="000000000" />
+        </label>
+        <label class="form-field">
+          CPF:
+          <input type="text" placeholder="000.000.000-00" />
+        </label>
+        <label class="form-field">
+          E-mail:
+          <input type="email" placeholder="seu.email@gmail.com" />
+        </label>
+        <label class="form-field">
+          Nome do Responsável:
+          <input type="text" placeholder="Nome do Responsável" />
+        </label>
+        <label class="form-field col-span-2">
+          Sexo:
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="sexo" /> Masculino
+            </label>
+            <label>
+              <input type="radio" name="sexo" /> Feminino
+            </label>
+          </div>
+        </label>
+      </form>
+    </div>
+
+    <h2 class="section-title">Endereço Completo</h2>
+    <div class="form-section">
+      <form class="form-grid">
+        <label class="form-field col-span-2">
+          Rua:
+          <input type="text" placeholder="Nome da rua" />
+        </label>
+        <label class="form-field">
+          Número:
+          <input type="text" placeholder="Número da casa" />
+        </label>
+        <label class="form-field">
+          Bairro:
+          <input type="text" placeholder="Bairro" />
+        </label>
+        <label class="form-field">
+          Cidade:
+          <input type="text" placeholder="Cidade" />
+        </label>
+        <label class="form-field">
+          Complemento:
+          <input type="text" placeholder="Complemento" />
+        </label>
+        <label class="form-field">
+          Estado:
+          <input type="text" placeholder="Estado" />
+        </label>
+        <label class="form-field col-span-3">
+          CEP:
+          <input type="text" placeholder="CEP" />
+        </label>
+      </form>
+    </div>
+
+    <div class="button-container">
+      <button [routerLink]="'/dados-socioeconomicos'" class="next-button">Próximo →</button>
+    </div>
+  </div>
+</div>

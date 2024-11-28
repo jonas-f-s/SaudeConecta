@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: "Poppins", sans-serif;
+}
+
+.logoSaudeConecta{
+  height: 3rem;
+  margin-left: 1rem;
+}
+
+#nav-bar {
+  background-color: #001E54 !important; /* Azul personalizado */
+  color: white !important; /* Cor do texto branco */
+}
+
+#nav-bar .navbar-nav {
+  margin-left: auto; /* Alinha os itens de navegação à direita */
+  margin-right: 1rem;
+}
+
+#nav-bar .navbar-collapse {
+  justify-content: flex-end; /* Alinha a navbar de maneira flexível para a direita */
+}
+
+#nav-bar .navbar-brand {
+  color: white !important; /* Cor do texto da marca */
+}
+
+#nav-bar .navbar-nav .nav-link {
+  color: white !important; /* Cor do texto dos links da navbar */
+}
+
