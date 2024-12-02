@@ -1,83 +1,194 @@
-<div id="webcrumbs">
-  <div class="container">
+<body>
+  <form>
+    <!-- Identificação do Profissional -->
+    <fieldset>
+      <legend>Identificação do Profissional</legend>
+      <div class="line-group">
+        <div class="input-group">
+          <label for="cns-profissional">CNS do profissional</label>
+          <input type="text" id="cns-profissional" name="cns-profissional">
+        </div>
+        <div class="input-group">
+          <label for="cbo">CBO</label>
+          <input type="text" id="cbo" name="cbo">
+        </div>
+        <div class="input-group">
+          <label for="cnes">CNES</label>
+          <input type="text" id="cnes" name="cnes">
+        </div>
+        <div class="input-group">
+          <label for="ine">INE</label>
+          <input type="text" id="ine" name="ine">
+        </div>
+        <div class="input-group">
+          <label for="data">Data</label>
+          <input type="date" id="data" name="data">
+        </div>
+      </div>
+    </fieldset>
 
-    <section class="section">
-      <h2 class="section-title">Dados Pessoais do Paciente</h2>
-      <div class="form">
-        <div class="form-item">
-          <label for="name">Nome Completo:</label>
-          <input type="text" id="name" placeholder="Nome do paciente">
+    <!-- Identificação do Usuário / Cidadão -->
+    <fieldset>
+      <legend>Identificação do Usuário / Cidadão</legend>
+      <div class="line-group">
+        <div class="input-group">
+          <label for="cpf-cns-cidadao">CPF/CNS do cidadão *</label>
+          <input type="text" id="cpf-cns-cidadao" name="cpf-cns-cidadao" required>
         </div>
-        <div class="form-item">
-          <label for="birthdate">Data de Nascimento:</label>
-          <input type="text" id="birthdate" placeholder="00/00/0000">
-        </div>
-        <div class="form-item">
-          <label for="sus-card">Número do Cartão SUS:</label>
-          <input type="text" id="sus-card" placeholder="000000000">
-        </div>
-        <div class="form-item">
-          <label for="cpf">CPF:</label>
-          <input type="text" id="cpf" placeholder="000.000.000-00">
-        </div>
-        <div class="form-item">
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" placeholder="seu.email@gmail.com">
-        </div>
-        <div class="form-item">
-          <label for="responsible-name">Nome do Responsável:</label>
-          <input type="text" id="responsible-name" placeholder="Nome do Responsável">
-        </div>
-        <div class="form-item">
-          <label for="contact-phone">Telefone de Contato:</label>
-          <input type="text" id="contact-phone" placeholder="(00) 9 0000-0000">
-        </div>
-        <div class="form-item">
-          <label>Sexo:</label>
-          <div class="gender-options">
-            <label><input type="radio" name="sexo" value="Masculino"> Masculino</label>
-            <label><input type="radio" name="sexo" value="Feminino"> Feminino</label>
+        <div class="input-group">
+          <label>Cidadão é o responsável familiar?</label>
+          <div class="inline-group">
+            <input type="radio" id="responsavel-sim" name="responsavel-familiar" value="sim">
+            <label for="responsavel-sim">Sim</label>
+            <input type="radio" id="responsavel-nao" name="responsavel-familiar" value="nao">
+            <label for="responsavel-nao">Não</label>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2 class="section-title">Endereço Completo</h2>
-      <div class="form">
-        <div class="form-item">
-          <label for="street">Rua:</label>
-          <input type="text" id="street" placeholder="Nome da rua">
-        </div>
-        <div class="form-item">
-          <label for="number">Número:</label>
-          <input type="text" id="number" placeholder="Número da casa">
-        </div>
-        <div class="form-item">
-          <label for="neighborhood">Bairro:</label>
-          <input type="text" id="neighborhood" placeholder="Bairro">
-        </div>
-        <div class="form-item">
-          <label for="city">Cidade:</label>
-          <input type="text" id="city" placeholder="Cidade">
-        </div>
-        <div class="form-item">
-          <label for="cep">CEP:</label>
-          <input type="text" id="cep" placeholder="CEP">
-        </div>
-        <div class="form-item">
-          <label for="complement">Complemento:</label>
-          <input type="text" id="complement" placeholder="Complemento">
-        </div>
-        <div class="form-item">
-          <label for="state">Estado:</label>
-          <input type="text" id="state" placeholder="Estado">
+        <div class="input-group">
+          <label for="cpf-responsavel">CPF/CNS do responsável familiar</label>
+          <input type="text" id="cpf-responsavel" name="cpf-responsavel">
         </div>
       </div>
-    </section>
 
-    <footer class="footer">
-      <button [routerLink]="'/dados-socioeconomicos'" class="next-button">Próximo</button>
-    </footer>
-  </div>
-</div>
+      <div class="line-group">
+        <div class="input-group">
+          <label for="nome-completo">Nome completo</label>
+          <input type="text" id="nome-completo" name="nome-completo">
+        </div>
+        <div class="input-group">
+          <label for="nome-social">Nome social</label>
+          <input type="text" id="nome-social" name="nome-social">
+        </div>
+        <div class="input-group">
+          <label for="microarea">Microárea</label>
+          <input type="text" id="microarea" name="microarea">
+          <div class="checkbox-group">
+            <input type="checkbox" id="fora-da-area" name="fora-da-area">
+            <label for="fora-da-area">Fora da área</label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="line-group">
+        <div class="input-group">
+          <label for="data-nascimento">Data de nascimento *</label>
+          <input type="date" id="data-nascimento" name="data-nascimento" required>
+        </div>
+        <fieldset>
+          <div class="input-group">
+            <label>Sexo *</label>
+            <div class="inline-group">
+              <input type="radio" id="sexo-feminino" name="sexo" value="feminino" required>
+              <label for="sexo-feminino">Feminino</label>
+              <input type="radio" id="sexo-masculino" name="sexo" value="masculino">
+              <label for="sexo-masculino">Masculino</label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="line-group">
+        <fieldset>
+          <div class="input-group">
+            <label>Raça/Cor *</label>
+            <div class="inline-group">
+              <input type="radio" id="branca" name="raca-cor" value="branca" required>
+              <label for="branca">Branca</label>
+              <input type="radio" id="preta" name="raca-cor" value="preta">
+              <label for="preta">Preta</label>
+              <input type="radio" id="parda" name="raca-cor" value="parda">
+              <label for="parda">Parda</label>
+              <input type="radio" id="amarela" name="raca-cor" value="amarela">
+              <label for="amarela">Amarela</label>
+              <input type="radio" id="indigena" name="raca-cor" value="indigena">
+              <label for="indigena">Indígena</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="input-group">
+          <label for="etnia">Etnia</label>
+          <input type="text" id="etnia" name="etnia">
+        </div>
+      </div>
+
+      <div class="line-group">
+        <div class="input-group">
+          <label for="nis">Nº NIS (PIS/PASEP)</label>
+          <input type="text" id="nis" name="nis">
+        </div>
+        <div class="input-group">
+          <label for="nome-mae">Nome completo da mãe *</label>
+          <input type="text" id="nome-mae" name="nome-mae" required>
+        </div>
+        <div class="input-group">
+          <label for="nome-pai">Nome completo do pai *</label>
+          <input type="text" id="nome-pai" name="nome-pai">
+          <div class="checkbox-group">
+            <input type="checkbox" id="pai-desconhecido" name="pai-desconhecido">
+            <label for="pai-desconhecido">Desconhecido</label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="line-group">
+        <div class="input-group">
+          <label>Nacionalidade *</label>
+          <div class="inline-group">
+            <input type="radio" id="brasileira" name="nacionalidade" value="brasileira" required>
+            <label for="brasileira">Brasileira</label>
+            <input type="radio" id="naturalizado" name="nacionalidade" value="naturalizado">
+            <label for="naturalizado">Naturalizado</label>
+            <input type="radio" id="estrangeiro" name="nacionalidade" value="estrangeiro">
+            <label for="estrangeiro">Estrangeiro</label>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="pais-nascimento">País de nascimento</label>
+          <input type="text" id="pais-nascimento" name="pais-nascimento">
+        </div>
+      </div>
+
+      <div class="line-group">
+        <div class="input-group">
+          <label for="data-naturalizacao">Data de naturalização</label>
+          <input type="date" id="data-naturalizacao" name="data-naturalizacao">
+        </div>
+        <div class="input-group">
+          <label for="portaria-naturalizacao">Portaria de naturalização</label>
+          <input type="text" id="portaria-naturalizacao" name="portaria-naturalizacao">
+        </div>
+        <div class="input-group">
+          <label for="municipio-nascimento">Município e UF de nascimento</label>
+          <input type="text" id="municipio-nascimento" name="municipio-nascimento">
+        </div>
+      </div>
+
+      <div class="line-group">
+        <div class="input-group">
+          <label for="data-entrada">Data de entrada no Brasil</label>
+          <input type="date" id="data-entrada" name="data-entrada">
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Contato -->
+    <fieldset>
+      <legend>Contato</legend>
+      <div class="line-group">
+        <div class="input-group">
+          <label for="telefone">Telefone celular</label>
+          <input type="text" id="telefone" name="telefone">
+        </div>
+        <div class="input-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email">
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</body>
+
+
+
