@@ -1,194 +1,592 @@
+
 <body>
-  <form>
-    <!-- Identificação do Profissional -->
-    <fieldset>
-      <legend>Identificação do Profissional</legend>
-      <div class="line-group">
-        <div class="input-group">
-          <label for="cns-profissional">CNS do profissional</label>
-          <input type="text" id="cns-profissional" name="cns-profissional">
-        </div>
-        <div class="input-group">
-          <label for="cbo">CBO</label>
-          <input type="text" id="cbo" name="cbo">
-        </div>
-        <div class="input-group">
-          <label for="cnes">CNES</label>
-          <input type="text" id="cnes" name="cnes">
-        </div>
-        <div class="input-group">
-          <label for="ine">INE</label>
-          <input type="text" id="ine" name="ine">
-        </div>
-        <div class="input-group">
-          <label for="data">Data</label>
-          <input type="date" id="data" name="data">
-        </div>
-      </div>
-    </fieldset>
+  <div class="form-container">
+    <form>
+      <h1>Cadastro Individual SUS</h1>
 
-    <!-- Identificação do Usuário / Cidadão -->
-    <fieldset>
-      <legend>Identificação do Usuário / Cidadão</legend>
-      <div class="line-group">
-        <div class="input-group">
-          <label for="cpf-cns-cidadao">CPF/CNS do cidadão *</label>
-          <input type="text" id="cpf-cns-cidadao" name="cpf-cns-cidadao" required>
-        </div>
-        <div class="input-group">
-          <label>Cidadão é o responsável familiar?</label>
-          <div class="inline-group">
-            <input type="radio" id="responsavel-sim" name="responsavel-familiar" value="sim">
-            <label for="responsavel-sim">Sim</label>
-            <input type="radio" id="responsavel-nao" name="responsavel-familiar" value="nao">
-            <label for="responsavel-nao">Não</label>
+      <!-- Identificação do Profissional -->
+      <fieldset>
+        <legend>Identificação do Profissional</legend>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cns-profissional">CNS do profissional:</label>
+            <input type="text" id="cns-profissional" name="cns-profissional">
+          </div>
+          <div class="form-group">
+            <label for="cbo">CBO:</label>
+            <input type="text" id="cbo" name="cbo">
+          </div>
+          <div class="form-group">
+            <label for="cnes">CNES:</label>
+            <input type="text" id="cnes" name="cnes">
+          </div>
+          <div class="form-group">
+            <label for="ine">INE:</label>
+            <input type="text" id="ine" name="ine">
+          </div>
+          <div class="form-group">
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data">
           </div>
         </div>
-        <div class="input-group">
-          <label for="cpf-responsavel">CPF/CNS do responsável familiar</label>
-          <input type="text" id="cpf-responsavel" name="cpf-responsavel">
-        </div>
-      </div>
+      </fieldset>
 
-      <div class="line-group">
-        <div class="input-group">
-          <label for="nome-completo">Nome completo</label>
-          <input type="text" id="nome-completo" name="nome-completo">
-        </div>
-        <div class="input-group">
-          <label for="nome-social">Nome social</label>
-          <input type="text" id="nome-social" name="nome-social">
-        </div>
-        <div class="input-group">
-          <label for="microarea">Microárea</label>
-          <input type="text" id="microarea" name="microarea">
-          <div class="checkbox-group">
-            <input type="checkbox" id="fora-da-area" name="fora-da-area">
-            <label for="fora-da-area">Fora da área</label>
+      <!-- Identificação do Usuário -->
+      <fieldset>
+        <legend>Identificação do Usuário / Cidadão</legend>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cpf-cns-cidadao">CPF/CNS do cidadão: *</label>
+            <input type="text" id="cpf-cns-cidadao" name="cpf-cns-cidadao" required>
+          </div>
+          <div class="form-group">
+            <label>Cidadão é o responsável familiar?</label>
+            <div class="radio-group">
+              <label><input type="radio" name="responsavel" value="sim"> Sim</label>
+              <label><input type="radio" name="responsavel" value="nao"> Não</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cpf-responsavel">CPF/CNS do responsável familiar:</label>
+            <input type="text" id="cpf-responsavel" name="cpf-responsavel">
           </div>
         </div>
-
-      </div>
-
-      <div class="line-group">
-        <div class="input-group">
-          <label for="data-nascimento">Data de nascimento *</label>
-          <input type="date" id="data-nascimento" name="data-nascimento" required>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nome-completo">Nome completo: *</label>
+            <input type="text" id="nome-completo" name="nome-completo" required>
+          </div>
+          <div class="form-group">
+            <label for="nome-social">Nome social:</label>
+            <input type="text" id="nome-social" name="nome-social">
+          </div>
         </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="microarea">Microárea:</label>
+            <input type="text" id="microarea" name="microarea">
+          </div>
+          <div class="form-group">
+            <label>Fora da área:</label>
+            <div class="radio-group">
+              <label><input type="checkbox" name="fora-da-area" value="sim"> Sim</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="data-nascimento">Data de nascimento: *</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required>
+          </div>
         <fieldset>
-          <div class="input-group">
-            <label>Sexo *</label>
-            <div class="inline-group">
-              <input type="radio" id="sexo-feminino" name="sexo" value="feminino" required>
-              <label for="sexo-feminino">Feminino</label>
-              <input type="radio" id="sexo-masculino" name="sexo" value="masculino">
-              <label for="sexo-masculino">Masculino</label>
+          <div class="form-group">
+            <label>Sexo: *</label>
+            <div class="radio-group">
+              <label><input type="radio" name="sexo" value="feminino"> Feminino</label>
+              <label><input type="radio" name="sexo" value="masculino"> Masculino</label>
             </div>
           </div>
         </fieldset>
-      </div>
-
-      <div class="line-group">
+        </div>
+        <div class="form-row">
         <fieldset>
-          <div class="input-group">
-            <label>Raça/Cor *</label>
-            <div class="inline-group">
-              <input type="radio" id="branca" name="raca-cor" value="branca" required>
-              <label for="branca">Branca</label>
-              <input type="radio" id="preta" name="raca-cor" value="preta">
-              <label for="preta">Preta</label>
-              <input type="radio" id="parda" name="raca-cor" value="parda">
-              <label for="parda">Parda</label>
-              <input type="radio" id="amarela" name="raca-cor" value="amarela">
-              <label for="amarela">Amarela</label>
-              <input type="radio" id="indigena" name="raca-cor" value="indigena">
-              <label for="indigena">Indígena</label>
+          <div class="form-group">
+            <label>Raça/Cor: *</label>
+            <div class="radio-group">
+              <label><input type="radio" name="raca" value="branca"> Branca</label>
+              <label><input type="radio" name="raca" value="preta"> Preta</label>
+              <label><input type="radio" name="raca" value="parda"> Parda</label>
+              <label><input type="radio" name="raca" value="amarela"> Amarela</label>
+              <label><input type="radio" name="raca" value="indigena"> Indígena</label>
             </div>
           </div>
         </fieldset>
-        <div class="input-group">
-          <label for="etnia">Etnia</label>
-          <input type="text" id="etnia" name="etnia">
-        </div>
-      </div>
-
-      <div class="line-group">
-        <div class="input-group">
-          <label for="nis">Nº NIS (PIS/PASEP)</label>
-          <input type="text" id="nis" name="nis">
-        </div>
-        <div class="input-group">
-          <label for="nome-mae">Nome completo da mãe *</label>
-          <input type="text" id="nome-mae" name="nome-mae" required>
-        </div>
-        <div class="input-group">
-          <label for="nome-pai">Nome completo do pai *</label>
-          <input type="text" id="nome-pai" name="nome-pai">
-          <div class="checkbox-group">
-            <input type="checkbox" id="pai-desconhecido" name="pai-desconhecido">
-            <label for="pai-desconhecido">Desconhecido</label>
+          <div class="form-group">
+            <label for="etnia">Etnia:</label>
+            <input type="text" id="etnia" name="etnia">
           </div>
         </div>
-
-      </div>
-
-      <div class="line-group">
-        <div class="input-group">
-          <label>Nacionalidade *</label>
-          <div class="inline-group">
-            <input type="radio" id="brasileira" name="nacionalidade" value="brasileira" required>
-            <label for="brasileira">Brasileira</label>
-            <input type="radio" id="naturalizado" name="nacionalidade" value="naturalizado">
-            <label for="naturalizado">Naturalizado</label>
-            <input type="radio" id="estrangeiro" name="nacionalidade" value="estrangeiro">
-            <label for="estrangeiro">Estrangeiro</label>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nis">Nº NIS (PIS/PASEP):</label>
+            <input type="text" id="nis" name="nis">
+          </div>
+          <div class="form-group">
+            <label for="nome-mae">Nome completo da mãe: *</label>
+            <input type="text" id="nome-mae" name="nome-mae" required>
           </div>
         </div>
-        <div class="input-group">
-          <label for="pais-nascimento">País de nascimento</label>
-          <input type="text" id="pais-nascimento" name="pais-nascimento">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nome-pai">Nome completo do pai: *</label>
+            <input type="text" id="nome-pai" name="nome-pai">
+            <label><input type="checkbox" name="pai-desconhecido" value="desconhecido"> Desconhecido</label>
+          </div>
         </div>
-      </div>
+      <fieldset>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nacionalidade: *</label>
+            <div class="radio-group">
+              <label><input type="radio" name="nacionalidade" value="brasileira"> Brasileira</label>
+              <label><input type="radio" name="nacionalidade" value="naturalizado"> Naturalizado</label>
+              <label><input type="radio" name="nacionalidade" value="estrangeiro"> Estrangeiro</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="pais-nascimento">País de nascimento:</label>
+            <input type="text" id="pais-nascimento" name="pais-nascimento">
+          </div>
+          <div class="form-group">
+            <label for="data-naturalizacao">Data de naturalização:</label>
+            <input type="date" id="data-naturalizacao" name="data-naturalizacao">
+          </div>
+          <div class="form-group">
+            <label for="portaria-naturalizacao">Portaria de naturalização:</label>
+            <input type="text" id="portaria-naturalizacao" name="portaria-naturalizacao">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="municipio-nascimento">Município e UF de nascimento:</label>
+            <input type="text" id="municipio-nascimento" name="municipio-nascimento">
+          </div>
+          <div class="form-group">
+            <label for="data-entrada-brasil">Data de entrada no Brasil:</label>
+            <input type="date" id="data-entrada-brasil" name="data-entrada-brasil">
+          </div>
+        </div>
+      </fieldset>
 
-      <div class="line-group">
-        <div class="input-group">
-          <label for="data-naturalizacao">Data de naturalização</label>
-          <input type="date" id="data-naturalizacao" name="data-naturalizacao">
+      <!-- Contato -->
+      <fieldset>
+        <legend>Contato</legend>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="telefone">Telefone celular:</label>
+            <input type="text" id="telefone" name="telefone">
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+          </div>
         </div>
-        <div class="input-group">
-          <label for="portaria-naturalizacao">Portaria de naturalização</label>
-          <input type="text" id="portaria-naturalizacao" name="portaria-naturalizacao">
-        </div>
-        <div class="input-group">
-          <label for="municipio-nascimento">Município e UF de nascimento</label>
-          <input type="text" id="municipio-nascimento" name="municipio-nascimento">
-        </div>
-      </div>
+      </fieldset>
 
-      <div class="line-group">
-        <div class="input-group">
-          <label for="data-entrada">Data de entrada no Brasil</label>
-          <input type="date" id="data-entrada" name="data-entrada">
-        </div>
-      </div>
-    </fieldset>
+<!-- Informações Sociodemográficas -->
+<fieldset>
+  <legend>Informações Sociodemográficas</legend>
 
-    <!-- Contato -->
+  <!-- Relação de Parentesco -->
+<fieldset>
+  <div class="form-group">
+    <label>Relação de parentesco com o responsável familiar:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="parentesco" value="conjuge"> Cônjuge / Companheiro(a)</label>
+      <label><input type="radio" name="parentesco" value="filho"> Filho(a)</label>
+      <label><input type="radio" name="parentesco" value="enteado"> Enteado(a)</label>
+      <label><input type="radio" name="parentesco" value="neto"> Neto(a) / Bisneto(a)</label>
+      <label><input type="radio" name="parentesco" value="pai"> Pai / Mãe</label>
+      <label><input type="radio" name="parentesco" value="sogro"> Sogro(a)</label>
+      <label><input type="radio" name="parentesco" value="irmao"> Irmão / Irmã</label>
+      <label><input type="radio" name="parentesco" value="genro"> Genro / Nora</label>
+      <label><input type="radio" name="parentesco" value="outro"> Outro parente</label>
+      <label><input type="radio" name="parentesco" value="nao-parente"> Não parente</label>
+    </div>
+  </div>
+</fieldset>
+
+  <!-- Ocupação -->
+  <div class="form-group">
+    <label for="ocupacao">Ocupação:</label>
+    <input type="text" id="ocupacao" name="ocupacao">
+  </div>
+
+  <!-- Frequenta escola ou creche -->
+  <div class="form-group">
+    <label>Frequenta escola ou creche?</label>
+    <div class="radio-group">
+      <label><input type="radio" name="frequenta-escola" value="sim"> Sim</label>
+      <label><input type="radio" name="frequenta-escola" value="nao"> Não</label>
+    </div>
+  </div>
+
+  <!-- Curso mais elevado -->
+<fieldset>
+  <div class="form-group">
+    <label>Qual é o curso mais elevado que frequenta ou frequentou?</label>
+    <div class="radio-group">
+      <label><input type="radio" name="curso-elevado" value="creche"> Creche</label>
+      <label><input type="radio" name="curso-elevado" value="pre-escola"> Pré-escola (exceto CA)</label>
+      <label><input type="radio" name="curso-elevado" value="ca"> Classe de alfabetização - CA</label>
+      <label><input type="radio" name="curso-elevado" value="fundamental-1-4"> Ensino fundamental 1ª a 4ª séries</label>
+      <label><input type="radio" name="curso-elevado" value="fundamental-5-8"> Ensino fundamental 5ª a 8ª séries</label>
+      <label><input type="radio" name="curso-elevado" value="fundamental-completo"> Ensino fundamental completo</label>
+      <label><input type="radio" name="curso-elevado" value="fundamental-especial"> Ensino fundamental especial</label>
+      <label><input type="radio" name="curso-elevado" value="fundamental-eja-inicial"> Ensino fundamental EJA - séries iniciais (supletivo 1ª a 4ª)</label>
+      <label><input type="radio" name="curso-elevado" value="fundamental-eja-final"> Ensino fundamental EJA - séries finais (supletivo 5ª a 8ª)</label>
+      <label><input type="radio" name="curso-elevado" value="medio"> Ensino médio, médio 2º ciclo (científico, técnico e etc.)</label>
+      <label><input type="radio" name="curso-elevado" value="medio-especial"> Ensino médio especial</label>
+      <label><input type="radio" name="curso-elevado" value="medio-eja"> Ensino médio EJA (supletivo)</label>
+      <label><input type="radio" name="curso-elevado" value="superior"> Superior, aperfeiçoamento, especialização, mestrado, doutorado</label>
+      <label><input type="radio" name="curso-elevado" value="alfabetizacao-adultos"> Alfabetização para adultos (Mobral, etc.)</label>
+      <label><input type="radio" name="curso-elevado" value="nenhum"> Nenhum</label>
+    </div>
+  </div>
+</fieldset>
+
+  <!-- Situação no mercado de trabalho -->
+<fieldset>
+  <div class="form-group">
+    <label>Situação no mercado de trabalho:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="mercado-trabalho" value="empregador"> Empregador</label>
+      <label><input type="radio" name="mercado-trabalho" value="assalariado-carteira"> Assalariado com carteira de trabalho</label>
+      <label><input type="radio" name="mercado-trabalho" value="assalariado-sem-carteira"> Assalariado sem carteira de trabalho</label>
+      <label><input type="radio" name="mercado-trabalho" value="autonomo-com-previdencia"> Autônomo com previdência social</label>
+      <label><input type="radio" name="mercado-trabalho" value="autonomo-sem-previdencia"> Autônomo sem previdência social</label>
+      <label><input type="radio" name="mercado-trabalho" value="aposentado"> Aposentado / Pensionista</label>
+      <label><input type="radio" name="mercado-trabalho" value="desempregado"> Desempregado</label>
+      <label><input type="radio" name="mercado-trabalho" value="nao-trabalha"> Não trabalha</label>
+      <label><input type="radio" name="mercado-trabalho" value="servidor-publico"> Servidor público / Militar</label>
+      <label><input type="radio" name="mercado-trabalho" value="outro"> Outro</label>
+    </div>
+  </div>
+</fieldset>
+
+
+
+    <!-- Crianças de 0 a 9 anos -->
     <fieldset>
-      <legend>Contato</legend>
-      <div class="line-group">
-        <div class="input-group">
-          <label for="telefone">Telefone celular</label>
-          <input type="text" id="telefone" name="telefone">
-        </div>
-        <div class="input-group">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email">
+      <legend>Crianças de 0 a 9 anos</legend>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Com quem fica?</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" formControlName="adultoResponsavel" /> Adulto responsável</label>
+            <label><input type="checkbox" formControlName="outrasCriancas" /> Outra(s) criança(s)</label>
+            <label><input type="checkbox" formControlName="adolescente" /> Adolescente</label>
+            <label><input type="checkbox" formControlName="sozinha" /> Sozinha</label>
+            <label><input type="checkbox" formControlName="creche" /> Creche</label>
+            <label><input type="checkbox" formControlName="outro" /> Outro</label>
+          </div>
         </div>
       </div>
     </fieldset>
-  </form>
+
+    <!-- Frequenta cuidador tradicional -->
+    <fieldset>
+      <legend>Frequenta cuidador tradicional?</legend>
+      <div class="radio-group">
+        <label><input type="radio" formControlName="cuidadorTradicional" value="sim" /> Sim</label>
+        <label><input type="radio" formControlName="cuidadorTradicional" value="nao" /> Não</label>
+      </div>
+    </fieldset>
+
+    <!-- Participação em grupo comunitário -->
+    <fieldset>
+      <legend>Participa de algum grupo comunitário?</legend>
+      <div class="radio-group">
+        <label><input type="radio" formControlName="grupoComunitario" value="sim" /> Sim</label>
+        <label><input type="radio" formControlName="grupoComunitario" value="nao" /> Não</label>
+      </div>
+    </fieldset>
+
+    <!-- Plano de saúde privado -->
+    <fieldset>
+      <legend>Possui plano de saúde privado?</legend>
+      <div class="radio-group">
+        <label><input type="radio" formControlName="planoSaude" value="sim" /> Sim</label>
+        <label><input type="radio" formControlName="planoSaude" value="nao" /> Não</label>
+      </div>
+    </fieldset>
+
+    <!-- Povo ou comunidade tradicional -->
+    <fieldset>
+      <legend>É membro de povo ou comunidade tradicional?</legend>
+      <div class="form-row">
+        <div class="radio-group">
+          <label><input type="radio" formControlName="membroComunidade" value="sim" /> Sim</label>
+          <label><input type="radio" formControlName="membroComunidade" value="nao" /> Não</label>
+        </div>
+        <div class="form-group">
+          <label>Se sim, qual?</label>
+          <input type="text" formControlName="qualComunidade" />
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Orientação sexual -->
+    <fieldset>
+      <legend>Deseja informar orientação sexual?</legend>
+      <div class="form-row">
+        <div class="radio-group">
+          <label><input type="radio" formControlName="informaOrientacaoSexual" value="sim" /> Sim</label>
+          <label><input type="radio" formControlName="informaOrientacaoSexual" value="nao" /> Não</label>
+        </div>
+        <div class="form-group">
+          <label>Se sim, qual?</label>
+          <div class="radio-group">
+            <label><input type="radio" formControlName="orientacaoSexual" value="heterossexual" /> Heterossexual</label>
+            <label><input type="radio" formControlName="orientacaoSexual" value="homossexual" /> Homossexual</label>
+            <label><input type="radio" formControlName="orientacaoSexual" value="bissexual" /> Bissexual</label>
+            <label><input type="radio" formControlName="orientacaoSexual" value="outro" /> Outro</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Identidade de gênero -->
+    <fieldset>
+      <legend>Deseja informar identidade de gênero?</legend>
+      <div class="form-row">
+        <div class="radio-group">
+          <label><input type="radio" formControlName="informaIdentidadeGenero" value="sim" /> Sim</label>
+          <label><input type="radio" formControlName="informaIdentidadeGenero" value="nao" /> Não</label>
+        </div>
+        <div class="form-group">
+          <label>Se sim, qual?</label>
+          <div class="radio-group">
+            <label><input type="radio" formControlName="identidadeGenero" value="homemTrans" /> Homem transsexual</label>
+            <label><input type="radio" formControlName="identidadeGenero" value="mulherTrans" /> Mulher transsexual</label>
+            <label><input type="radio" formControlName="identidadeGenero" value="travesti" /> Travesti</label>
+            <label><input type="radio" formControlName="identidadeGenero" value="outro" /> Outro</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Deficiências -->
+    <fieldset>
+      <legend>Tem alguma deficiência?</legend>
+      <div class="radio-group">
+        <label><input type="radio" formControlName="temDeficiencia" value="sim" /> Sim</label>
+        <label><input type="radio" formControlName="temDeficiencia" value="nao" /> Não</label>
+      </div>
+      <div class="checkbox-group">
+        <label><input type="checkbox" formControlName="defAuditiva" /> Auditiva</label>
+        <label><input type="checkbox" formControlName="defVisual" /> Visual</label>
+        <label><input type="checkbox" formControlName="defIntelectual" /> Intelectual / Cognitiva</label>
+        <label><input type="checkbox" formControlName="defFisica" /> Física</label>
+        <label><input type="checkbox" formControlName="defOutra" /> Outra</label>
+      </div>
+    </fieldset>
+  </fieldset>
+
+    <!-- Saída do cidadão -->
+    <fieldset>
+      <legend>Saída do cidadão do cadastro</legend>
+      <div class="radio-group">
+        <label><input type="radio" formControlName="saidaCadastro" value="mudanca" /> Mudança de território</label>
+        <label><input type="radio" formControlName="saidaCadastro" value="obito" /> Óbito</label>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Data do óbito:</label>
+          <input type="date" formControlName="dataObito" />
+        </div>
+        <div class="form-group">
+          <label>Número da D.O.:</label>
+          <input type="text" formControlName="numeroDO" />
+        </div>
+      </div>
+    </fieldset>
+
+
+    <!-- Condições / Situações de saúde gerais -->
+    <fieldset>
+      <legend>Condições / Situações de saúde gerais</legend>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Está gestante?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="gestante" value="sim"> Sim</label>
+            <label><input type="radio" name="gestante" value="nao"> Não</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Sobre seu peso, você se considera?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="peso" value="abaixo"> Abaixo do peso</label>
+            <label><input type="radio" name="peso" value="adequado"> Peso adequado</label>
+            <label><input type="radio" name="peso" value="acima"> Acima do peso</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Está fumante?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="fumante" value="sim"> Sim</label>
+            <label><input type="radio" name="fumante" value="nao"> Não</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Faz uso de álcool?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="alcool" value="sim"> Sim</label>
+            <label><input type="radio" name="alcool" value="nao"> Não</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Faz uso de outras drogas?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="drogas" value="sim"> Sim</label>
+            <label><input type="radio" name="drogas" value="nao"> Não</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Tem hipertensão arterial?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="hipertensao" value="sim"> Sim</label>
+            <label><input type="radio" name="hipertensao" value="nao"> Não</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Doenças específicas -->
+    <fieldset>
+      <legend>Doenças e condições específicas</legend>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Tem doença cardíaca / do coração?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="doenca_cardiaca" value="sim"> Sim</label>
+            <label><input type="radio" name="doenca_cardiaca" value="nao"> Não</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Se sim, indique qual(is):</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="cardiaca[]" value="insuficiencia"> Insuficiência cardíaca</label>
+            <label><input type="checkbox" name="cardiaca[]" value="outro"> Outro</label>
+            <label><input type="checkbox" name="cardiaca[]" value="nao_sabe"> Não sabe</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Outras condições -->
+    <fieldset>
+      <legend>Outras condições de saúde</legend>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Qual? (1)</label>
+          <input type="text" name="condicao1">
+        </div>
+        <div class="form-group">
+          <label>Qual? (2)</label>
+          <input type="text" name="condicao2">
+        </div>
+        <div class="form-group">
+          <label>Qual? (3)</label>
+          <input type="text" name="condicao3">
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+    <legend>Formulário para Cadastro de Cidadão em Situação de Rua</legend>
+
+    <!-- Cidadão em situação de rua -->
+    <fieldset>
+      <legend>Cidadão em situação de rua</legend>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Está em situação de rua?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="situacaoRua" value="sim" ngModel required> Sim</label>
+            <label><input type="radio" name="situacaoRua" value="nao" ngModel required> Não</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Tempo em situação de rua?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="tempoRua" value="<6" ngModel required> &lt; 6 meses</label>
+            <label><input type="radio" name="tempoRua" value="6-12" ngModel required> 6 a 12 meses</label>
+            <label><input type="radio" name="tempoRua" value="1-5" ngModel required> 1 a 5 anos</label>
+            <label><input type="radio" name="tempoRua" value=">5" ngModel required> &gt; 5 anos</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Benefícios e Referência Familiar -->
+    <fieldset>
+      <legend>Benefícios e Referência Familiar</legend>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Recebe algum benefício?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="beneficio" value="sim" ngModel required> Sim</label>
+            <label><input type="radio" name="beneficio" value="nao" ngModel required> Não</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Possui referência familiar?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="referenciaFamiliar" value="sim" ngModel required> Sim</label>
+            <label><input type="radio" name="referenciaFamiliar" value="nao" ngModel required> Não</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Higiene e alimentação -->
+    <fieldset>
+      <legend>Higiene e Alimentação</legend>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Quantas vezes se alimenta ao dia?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="alimentacaoDia" value="1" ngModel required> 1 vez</label>
+            <label><input type="radio" name="alimentacaoDia" value="2-3" ngModel required> 2 ou 3 vezes</label>
+            <label><input type="radio" name="alimentacaoDia" value=">3" ngModel required> Mais de 3 vezes</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Qual a origem da alimentação?</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="origemAlimentacao" value="restaurantePopular" ngModel> Restaurante popular</label>
+            <label><input type="checkbox" name="origemAlimentacao" value="doacaoRestaurante" ngModel> Doação restaurante</label>
+            <label><input type="checkbox" name="origemAlimentacao" value="doacaoReligiosa" ngModel> Doação grupo religioso</label>
+            <label><input type="checkbox" name="origemAlimentacao" value="doacaoPopular" ngModel> Doação de popular</label>
+          </div>
+          <input type="text" name="alimentacaoOutros" placeholder="Outros..." ngModel>
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Termo de Recusa -->
+    <fieldset>
+      <legend>Termo de Recusa</legend>
+      <div class="form-group">
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="recusaCadastro" value="recusado" ngModel> Usuário recusou o cadastro por meio do Termo de Recusa do Cadastro</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Botões de ação -->
+    <div class="button-group">
+      <button type="button" >Cancelar</button>
+      <button type="submit" >Salvar</button>
+    </div>
+  </fieldset>
+
+    </form>
+  </div>
 </body>
+
+
+
+
 
 
 
