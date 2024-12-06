@@ -1,0 +1,343 @@
+
+<body>
+  <form>
+    <h1>Cadastro domiciliar e territorial</h1>
+    <!-- Cabeçalho do Formulário -->
+    <fieldset>
+    <div class="header-section">
+      <div class="input-group">
+        <label for="cns-profissional">CNS do Profissional *</label>
+        <input type="text" id="cns-profissional" name="cns-profissional">
+      </div>
+      <div class="input-group">
+        <label for="cbo">CBO *</label>
+        <select id="cbo" name="cbo">
+          <option value="">Selecione</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="cnes">CNES *</label>
+        <select id="cnes" name="cnes">
+          <option value="">Selecione</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="ine">INE *</label>
+        <select id="ine" name="ine">
+          <option value="">Selecione</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="data">Data *</label>
+        <input type="date" id="data" name="data">
+      </div>
+    </div>
+    </fieldset>
+
+    <!-- Endereço / Local de Permanência -->
+    <fieldset>
+      <legend>Endereço / Local de Permanência</legend>
+      <div class="line-group">
+        <div class="input-group">
+          <label for="cep">CEP *</label>
+          <input type="text" id="cep" name="cep">
+        </div>
+        <div class="input-group">
+          <label for="municipio">Município *</label>
+          <input type="text" id="municipio" name="municipio">
+        </div>
+        <div class="input-group">
+          <label for="uf">UF *</label>
+          <select id="uf" name="uf">
+            <option value="">Selecione</option>
+          </select>
+        </div>
+      </div>
+      <div class="line-group">
+        <div class="input-group">
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro">
+        </div>
+        <div class="input-group">
+          <label for="logradouro">Nome do Logradouro *</label>
+          <input type="text" id="logradouro" name="logradouro">
+        </div>
+        <div class="input-group">
+          <label for="tipo-logradouro">Tipo de Logradouro *</label>
+          <select id="tipo-logradouro" name="tipo-logradouro">
+            <option value="">Selecione</option>
+          </select>
+        </div>
+      </div>
+      <div class="line-group">
+        <div class="input-group">
+          <label for="complemento">Complemento</label>
+          <input type="text" id="complemento" name="complemento">
+        </div>
+        <div class="input-group">
+          <label for="referencia">Ponto de Referência</label>
+          <input type="text" id="referencia" name="referencia">
+        </div>
+      </div>
+      <div class="line-group">
+        <div class="input-group">
+          <label for="numero">N° *</label>
+          <input type="text" id="numero" name="numero">
+          <div class="helper-text">
+            <input type="checkbox" id="sem-numero" name="sem-numero">
+            <label for="sem-numero">Sem número</label>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="microarea">Microárea *</label>
+          <input type="text" id="microarea" name="microarea">
+          <div class="helper-text">
+            <input type="checkbox" id="fora-area" name="fora-area">
+            <label for="fora-area">Fora da área</label>
+          </div>
+        </div>
+      </div>
+
+    </fieldset>
+
+    <!-- Tipo de Imóvel e Telefones -->
+    <div class="line-group">
+      <div class="input-group">
+        <label for="tipo-imovel">Tipo de Imóvel *</label>
+        <select id="tipo-imovel" name="tipo-imovel">
+          <option value="">Selecione</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="tel-residencia">Tel. Residência</label>
+        <input type="text" id="tel-residencia" name="tel-residencia">
+      </div>
+      <div class="input-group">
+        <label for="tel-contato">Tel. Contato</label>
+        <input type="text" id="tel-contato" name="tel-contato">
+      </div>
+    </div>
+
+
+    <!-- Condições de Moradia -->
+    <fieldset>
+      <legend>Condições de Moradia</legend>
+      <!-- Situação de moradia / Posse da terra -->
+      <div class="line-group">
+        <div class="input-group">
+          <label>Situação de moradia / Posse da terra <span>*</span></label>
+          <div class="inline-group">
+            <label><input type="radio" name="situacao" value="proprio"> Próprio</label>
+            <label><input type="radio" name="situacao" value="financiado"> Financiado</label>
+            <label><input type="radio" name="situacao" value="alugado"> Alugado</label>
+            <label><input type="radio" name="situacao" value="arrendado"> Arrendado</label>
+            <label><input type="radio" name="situacao" value="cedido"> Cedido</label>
+            <label><input type="radio" name="situacao" value="ocupacao"> Ocupação</label>
+            <label><input type="radio" name="situacao" value="rua"> Situação de rua</label>
+            <label><input type="radio" name="situacao" value="outra"> Outra</label>
+          </div>
+        </div>
+        <div class="input-group">
+          <label>Localização <span>*</span></label>
+          <div class="inline-group">
+            <label><input type="radio" name="localizacao" value="urbana"> Urbana</label>
+            <label><input type="radio" name="localizacao" value="rural"> Rural</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tipo de domicílio -->
+      <div class="line-group">
+        <div class="input-group">
+          <label>Tipo de domicílio</label>
+          <div class="inline-group">
+            <label><input type="radio" name="tipo-domicilio" value="casa"> Casa</label>
+            <label><input type="radio" name="tipo-domicilio" value="apartamento"> Apartamento</label>
+            <label><input type="radio" name="tipo-domicilio" value="comodo"> Cômodo</label>
+            <label><input type="radio" name="tipo-domicilio" value="outro"> Outro</label>
+          </div>
+        </div>
+        <div class="input-group">
+          <label>Em caso de área de produção rural:</label>
+          <div class="inline-group">
+            <label><input type="radio" name="producao-rural" value="proprietario"> Proprietário</label>
+            <label><input type="radio" name="producao-rural" value="parceiro"> Parceiro / Meeiro(a)</label>
+            <label><input type="radio" name="producao-rural" value="posseiro"> Posseiro</label>
+            <label><input type="radio" name="producao-rural" value="arrendatario"> Arrendatário(a)</label>
+            <label><input type="radio" name="producao-rural" value="assentado"> Assentado(a)</label>
+            <label><input type="radio" name="producao-rural" value="comodatario"> Comodatário(a)</label>
+            <label><input type="radio" name="producao-rural" value="beneficiario"> Beneficiário(a) do Banco da Terra</label>
+            <label><input type="radio" name="producao-rural" value="nao-aplica"> Não se aplica</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Número de moradores e cômodos -->
+      <div class="line-group">
+        <div class="input-group">
+          <label for="moradores">N° de moradores</label>
+          <input type="text" id="moradores" name="moradores">
+        </div>
+        <div class="input-group">
+          <label for="comodos">N° de cômodos</label>
+          <input type="text" id="comodos" name="comodos">
+        </div>
+      </div>
+
+      <!-- Tipo de acesso ao domicílio -->
+      <div class="line-group">
+        <div class="input-group">
+          <label>Tipo de acesso ao domicílio</label>
+          <div class="inline-group">
+            <label><input type="radio" name="acesso" value="pavimento"> Pavimento</label>
+            <label><input type="radio" name="acesso" value="chao-batido"> Chão batido</label>
+            <label><input type="radio" name="acesso" value="fluvial"> Fluvial</label>
+            <label><input type="radio" name="acesso" value="outro"> Outro</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+
+
+
+
+    <!-- Animais no domicílio -->
+    <fieldset>
+      <legend>Animais no domicílio</legend>
+      <div class="line-group">
+        <div class="inline-group">
+          <label>Animais no domicílio?</label>
+          <input type="radio" id="animais-sim" name="animais" value="sim">
+          <label for="animais-sim">Sim</label>
+          <input type="radio" id="animais-nao" name="animais" value="nao">
+          <label for="animais-nao">Não</label>
+        </div>
+        <div class="inline-group">
+          <label>Qual(is)?</label>
+          <input type="checkbox" id="gato" name="animal">
+          <label for="gato">Gato</label>
+          <input type="checkbox" id="cachorro" name="animal">
+          <label for="cachorro">Cachorro</label>
+          <input type="checkbox" id="passaro" name="animal">
+          <label for="passaro">Pássaro</label>
+          <input type="checkbox" id="outros" name="animal">
+          <label for="outros">Outros</label>
+          <label for="quantos">Quantos:</label>
+          <input type="text" id="quantos" name="quantos" placeholder="Ex: 2">
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Famílias -->
+    <fieldset>
+      <legend>Famílias</legend>
+      <div class="line-group">
+        <div class="input-group">
+          <label for="prontuario-familiar">Nº prontuário familiar</label>
+          <input type="text" id="prontuario-familiar" name="prontuario-familiar">
+        </div>
+        <div class="input-group">
+          <label for="cpf-responsavel">CPF/CNS do responsável *</label>
+          <input type="text" id="cpf-responsavel" name="cpf-responsavel">
+        </div>
+        <div class="input-group">
+          <label for="nascimento-responsavel">Data de nascimento do responsável</label>
+          <input type="date" id="nascimento-responsavel" name="nascimento-responsavel">
+        </div>
+        <div class="input-group">
+          <label for="renda-familiar">Renda familiar (sal. mínimo)</label>
+          <select id="renda-familiar" name="renda-familiar">
+            <option value="1">1 salário mínimo</option>
+            <option value="2">2 salários mínimos</option>
+            <option value="3">3 salários mínimos</option>
+            <option value="4">Acima de 3 salários mínimos</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="membros-familia">Número de membros da família</label>
+          <input type="number" id="membros-familia" name="membros-familia">
+        </div>
+        <div class="input-group">
+          <label for="reside-desde">Reside desde</label>
+          <input type="month" id="reside-desde" name="reside-desde">
+        </div>
+        <div class="inline-group">
+          <input type="checkbox" id="mudou-se" name="mudou-se">
+          <label for="mudou-se">Mudou-se</label>
+        </div>
+        <button type="button">Confirmar</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Nº prontuário</th>
+            <th>CPF/CNS do resp.</th>
+            <th>Dt. de nasc. do resp.</th>
+            <th>Renda familiar (sal. mínimo)</th>
+            <th>Nº de memb. da fam.</th>
+            <th>Reside desde</th>
+            <th>Mudou-se</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="7" style="text-align: center;">Nenhum item encontrado.</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+
+    <!-- Instituição de permanência -->
+    <fieldset>
+      <legend>Instituição de permanência</legend>
+      <div class="input-group">
+        <label for="instituicao">Nome da instituição de permanência</label>
+        <input type="text" id="instituicao" name="instituicao">
+      </div>
+      <div class="line-group">
+        <label>Existem outros profissionais de saúde vinculados à instituição?</label>
+        <input type="radio" id="profissionais-sim" name="profissionais" value="sim">
+        <label for="profissionais-sim">Sim</label>
+        <input type="radio" id="profissionais-nao" name="profissionais" value="nao">
+        <label for="profissionais-nao">Não</label>
+      </div>
+      <div class="line-group">
+        <div class="input-group">
+          <label for="nome-responsavel">Nome *</label>
+          <input type="text" id="nome-responsavel" name="nome-responsavel">
+        </div>
+        <div class="input-group">
+          <label for="cns-responsavel">CNS do responsável</label>
+          <input type="text" id="cns-responsavel" name="cns-responsavel">
+        </div>
+        <div class="input-group">
+          <label for="cargo-responsavel">Cargo na instituição</label>
+          <input type="text" id="cargo-responsavel" name="cargo-responsavel">
+        </div>
+        <div class="input-group">
+          <label for="telefone-responsavel">Tel. contato</label>
+          <input type="tel" id="telefone-responsavel" name="telefone-responsavel">
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Termo de recusa -->
+    <fieldset>
+      <legend>Termo de recusa</legend>
+      <div class="inline-group">
+        <input type="checkbox" id="recusa" name="recusa">
+        <label for="recusa">Usuário recusou o cadastro por meio do Termo de Recusa do Cadastro</label>
+      </div>
+    </fieldset>
+
+    <!-- Botões de ação -->
+    <footer>
+      <button type="reset" class="cancel">Cancelar</button>
+      <button type="submit" class="submit">Salvar</button>
+    </footer>
+  </form>
+
+
+
+</body>

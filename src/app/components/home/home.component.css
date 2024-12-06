@@ -69,6 +69,12 @@ section h1 {
   padding: 10px;
 }
 
+
+.buttons button:hover {
+  background-color: #3498db;
+  color: white;
+}
+
 /* Media Queries para Responsividade */
 
 /* Para dispositivos com largura de tela menor que 768px (tablets e celulares) */
