@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +8,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Layout principal */
 .layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
 }
 
-/* Área de login */
 .login-area {
   background-color: #f8f8f8;
   display: flex;
@@ -24,6 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  height: 95%;
 }
 
 .logo {
@@ -47,7 +45,6 @@ h2 {
   color: #555;
 }
 
-/* Formulário de login */
 .login-form {
   width: 100%;
   max-width: 400px;
@@ -85,16 +82,17 @@ h2 {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  
 }
 
-/* Área de navegação */
 .navigation-area {
-  background-color: #e7e7e7;
+  background-color: #f8f8ff;
   background-image: url(../../../assets/background-blue.svg);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
+  height: 95%;
 }
 
 .main-navigation {
@@ -117,25 +115,20 @@ h2 {
   margin-top: 2%;
 }
 
-/* Media Query para telas menores que 768px (dispositivos móveis) */
 @media (max-width: 768px) {
-  /* Ocultar a navegação e imagem no celular */
   .navigation-area {
     display: none;
   }
 
-  /* Ocultar o layout da grid para o celular, mostrando apenas a área de login */
   .layout {
-    grid-template-columns: 1fr; /* 1 coluna para exibir apenas a tela de login */
+    grid-template-columns: 1fr;
   }
 
-  /* A imagem hero será escondida no celular */
   .hero-image {
     display: none;
   }
 
-  /* Exibir apenas a área de login no celular */
   .login-area {
-    display: flex; /* Exibe o formulário de login */
+    display: flex; 
   }
 }

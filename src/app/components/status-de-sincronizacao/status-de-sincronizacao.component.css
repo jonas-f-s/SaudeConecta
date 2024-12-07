@@ -1,7 +1,6 @@
-/* Estrutura principal */
 .page-container {
   color: #ffffff;
-  background-color: #0a1733;
+  background-image: url(../../../assets/background-blue.svg);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -16,7 +15,6 @@
   text-align: center;
 }
 
-/* Estilo da busca */
 .search-container {
   width: 100%;
   max-width: 600px;
@@ -32,10 +30,12 @@ label {
 .search-box {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap; 
 }
 
 .search-input {
   flex: 1;
+  min-width: 150px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #cccccc;
@@ -57,7 +57,6 @@ label {
   background-color: #144cc0;
 }
 
-/* Estilo da tabela */
 .table-container {
   width: 100%;
   overflow-x: auto;
@@ -89,29 +88,27 @@ label {
   font-size: 0.9rem;
 }
 
-/* Estilo dos status */
 .status {
   font-weight: bold;
   display: inline-block;
 }
 
 .status-synchronized {
-  color: #00ff00; /* Verde para "Sincronizado" */
+  color: #00ff00; 
 }
 
 .status-not-synchronized {
-  color: #ff0000; /* Vermelho para "Não sincronizado" */
+  color: #ff0000; 
 }
 
-/* Botão voltar */
 .back-button-container {
   margin-top: 20px;
   width: 100%;
 }
 
 .back-button {
-  width: 100%;
-  padding: 10px 0;
+  width: 10%; 
+  padding: 10px 20px; 
   border: none;
   border-radius: 5px;
   background-color: #1e5bff;
@@ -127,8 +124,6 @@ label {
   background-color: #144cc0;
 }
 
-
-/* Responsividade */
 @media (max-width: 768px) {
   .title {
     font-size: 1.5rem;
@@ -139,7 +134,53 @@ label {
     font-size: 0.8rem;
   }
 
-  .search-container input {
-    width: 150px;
+  .search-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .search-box {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .search-input {
+    width: 100%;
+    margin-bottom: 10px; 
+  }
+
+  .search-button {
+    width: 30%;
+    padding: 12px 0px;
+  }
+
+  .back-button {
+    width: 20%; 
+    padding: 12px 0;
+  }
+
+  .table-container {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .responsive-table th,
+  .responsive-table td {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .search-container {
+    margin-bottom: 15px;
+  }
+
+  .back-button {
+    padding: 15px 0;
   }
 }
