@@ -127,18 +127,18 @@ label {
   }
 
   .search-input {
-    width: 100%; /* Faz o campo de busca ocupar toda a largura disponível */
-    margin-bottom: 10px; /* Espaçamento entre o campo de entrada e o botão */
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .search-button {
-    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    width: 100%;
   }
 
   .responsive-table th,
   .responsive-table td {
-    font-size: 0.8rem; /* Reduz o tamanho da fonte na tabela em dispositivos móveis */
-    padding: 10px; /* Menor padding */
+    font-size: 0.8rem;
+    padding: 10px;
   }
 
   .table-container {
@@ -146,14 +146,14 @@ label {
   }
 
   .back-button {
-    width: 20%; /* Faz o botão "Voltar" ocupar toda a largura */
-    padding: 12px 0; /* Aumenta a altura do botão em telas pequenas */
+    width: 20%;
+    padding: 12px 0;
   }
 }
 
 @media (max-width: 480px) {
   .title {
-    font-size: 1.2rem; /* Reduz o tamanho da fonte em telas muito pequenas */
+    font-size: 1.2rem;
   }
 
   .search-container {
@@ -161,6 +161,6 @@ label {
   }
 
   .back-button {
-    padding: 15px 0; /* Aumenta o padding em telas muito pequenas */
+    padding: 15px 0;
   }
 }

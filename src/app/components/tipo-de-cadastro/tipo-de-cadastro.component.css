@@ -21,7 +21,6 @@
   gap: 20px;
 }
 
-/* Ajustes do título */
 section h1 {
   font-weight: 700;
   font-size: 40px;
@@ -31,7 +30,7 @@ section h1 {
 }
 
 .buttons {
-  margin-top: 50px; /* Reduzi o espaço superior */
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
@@ -54,34 +53,30 @@ section h1 {
   color: white;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
-  /* Ajuste o título para telas menores */
   section h1 {
-    font-size: 30px; /* Tamanho menor para o título */
+    font-size: 30px;
     margin: 50px 0;
   }
 
-  /* Ajuste a estrutura dos botões */
   .buttons {
-    grid-template-columns: 1fr; /* Um botão por linha em telas menores */
+    grid-template-columns: 1fr;
     margin-top: 30px;
   }
 
   .buttons button {
-    width: 90%; /* Botões ocupando mais largura */
-    font-size: 20px; /* Reduzir o tamanho da fonte dos botões */
+    width: 90%;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  /* Para telas ainda menores, ajustando o tamanho da fonte e largura dos botões */
   section h1 {
-    font-size: 24px; /* Fontes menores em dispositivos móveis */
+    font-size: 24px;
   }
 
   .buttons button {
-    width: 100%; /* Botões ocupam 100% da largura da tela */
-    font-size: 18px; /* Fonte menor */
+    width: 100%;
+    font-size: 18px;
   }
 }
