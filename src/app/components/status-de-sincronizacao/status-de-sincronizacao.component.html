@@ -1,1 +1,48 @@
-<p>status-de-sincronizacao works!</p>
+<div class="page-container">
+  <h1 class="title">Status de Sincronização</h1>
+
+  <div class="search-container">
+    <label for="search-input">CPF / CNS do cidadão:</label>
+    <div class="search-box">
+      <input
+        id="search-input"
+        type="text"
+        placeholder="000000000"
+        class="search-input"
+      />
+      <button class="search-button">Pesquisar</button>
+    </div>
+  </div>
+
+
+  <div class="table-container">
+    <table class="responsive-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Nome do cidadão</th>
+          <th>CPF / CNS do cidadão</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>18/07/2024</td>
+          <td>José Calos Silva</td>
+          <td>000.000.000-00</td>
+          <td><span class="status status-synchronized">Sincronizado</span></td>
+        </tr>
+        <tr>
+          <td>05/05/2024</td>
+          <td>Paulo Vitor Silva</td>
+          <td>000.000.000-00</td>
+          <td><span class="status status-not-synchronized">Não sincronizado</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="back-button-container">
+    <button class="back-button" [routerLink]="'/home'">Voltar</button>
+  </div>
+</div>

@@ -1,0 +1,142 @@
+
+
+/* Estrutura principal */
+.page-container {
+  color: #ffffff;
+  background-image: url(../../../assets/background-blue.svg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Estilo da busca */
+.search-container {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  font-size: 1rem;
+}
+
+.search-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e5bff;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #144cc0;
+}
+
+/* Estilo da tabela */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  background-color: #12264d;
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 10px;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.responsive-table th,
+.responsive-table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #1e3a5f;
+}
+
+.responsive-table th {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.responsive-table td {
+  font-size: 0.9rem;
+}
+
+.empty-message {
+  text-align: center;
+  font-style: italic;
+  color: #bbbbbb;
+}
+
+/* Botão voltar */
+.back-button-container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.back-button {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e5bff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+.back-button:hover {
+  background-color: #144cc0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-input {
+    margin-bottom: 10px;
+  }
+
+  .responsive-table th,
+  .responsive-table td {
+    font-size: 0.8rem;
+  }
+}

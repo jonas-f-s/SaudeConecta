@@ -1,1 +1,41 @@
-<p>visitas-cadastradas works!</p>
+<div class="page-container">
+  <h1 class="title">Visitas cadastradas</h1>
+
+  <div class="search-container">
+    <label for="search-input">CPF / CNS do cidadão:</label>
+    <div class="search-box">
+      <input
+        id="search-input"
+        type="text"
+        placeholder="000000000"
+        class="search-input"
+      />
+      <button class="search-button">Pesquisar</button>
+    </div>
+  </div>
+
+  <div class="table-container">
+    <table class="responsive-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Nome do cidadão</th>
+          <th>CPF / CNS do cidadão</th>
+          <th>Data de nascimento</th>
+          <th>Nome completo da mãe</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="5" class="empty-message">
+            Nenhum item encontrado com o critério selecionado.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="back-button-container">
+    <button class="back-button" [routerLink]="'/home'">Voltar</button>
+  </div>
+</div>

@@ -1,1 +1,44 @@
-<p>pacientes-recentes works!</p>
+<div class="page-container">
+  <h1 class="title">Pacientes recentes</h1>
+
+  <div class="table-container">
+    <table class="responsive-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Nome do cidadão</th>
+          <th>CPF / CNS do cidadão</th>
+          <th>Data de nascimento</th>
+          <th>Nome completo da mãe</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>18/07/2024</td>
+          <td>José Calos Silva</td>
+          <td>000.000.000-00</td>
+          <td>19/05/1999</td>
+          <td>Maria Celia Silva</td>
+        </tr>
+        <tr>
+          <td>05/05/2024</td>
+          <td>Paulo Vitor Souza</td>
+          <td>000.000.000-00</td>
+          <td>19/05/1999</td>
+          <td>Marta Souza Silva</td>
+        </tr>
+        <tr>
+          <td>01/05/2024</td>
+          <td>Ana Beatriz Ribeiro</td>
+          <td>000.000.000-00</td>
+          <td>19/05/1999</td>
+          <td>Carla Ribeiro</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="back-button-container">
+    <button class="back-button" [routerLink]="'/home'">Voltar</button>
+  </div>
+</div>
